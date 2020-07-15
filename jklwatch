@@ -1,0 +1,31 @@
+
+#!/bin/bash
+
+        echo -e "\e[30;46m***** CURRENT LOAD *****\e[0m"
+        echo Current load on Server: `cat /proc/loadavg | awk '{print $1}'`
+        echo ""
+        # -HostName Information
+        echo -e "\e[30;46m8***** HOSTNAME INFORMATION *****\e[0m"
+        hostname
+        echo ""
+        # -File system disk space usage:
+        echo -e "\e[30;46m***** FILE SYSTEM DISK SPACE USAGE *****\e[0m"
+        df -Th
+        echo ""
+        # -Free and used memory in the system:
+        echo -e "\e[30;46m ***** FREE AND USED MEMORY *****\e[0m"
+        free -h
+        echo ""
+        # -System uptime and load:
+        echo -e "\e[30;46m***** SYSTEM UPTIME AND LOAD *****\e[0m"
+        uptime
+        echo ""
+        # -Logged-in users:
+        echo -e "\e[30;46m***** CURRENTLY LOGGED-IN USERS *****\e[0m"
+        who
+        echo ""
+        # -Top 5 processes as far as memory usage is concerned
+        echo -e "\e[30;46m***** TOP 5 MEMORY-CONSUMING PROCESSES *****\e[0m"
+        ps -eo %mem,%cpu,comm --sort=-%mem | head -n 6
+        echo ""
+        echo -e "\e[1;32mDone.\e[0m"
