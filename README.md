@@ -1,4 +1,4 @@
-# jklwatch
+# ' *** jklwatch *** ' Linux Command
 Monitoring all task manager details in brief
 It will show following:
 1. CURRENT LOAD 
@@ -10,7 +10,9 @@ It will show following:
 7. TOP 5 MEMORY-CONSUMING PROCESSES
 
 #Installation commands
-
+1. Download 'jklwatch' file
+2. Run following Codes in Terminal:
+```
 sudo chmod 760 jklwatch 
 sudo mv jklwatch /usr/local/bin
 jklwatch
