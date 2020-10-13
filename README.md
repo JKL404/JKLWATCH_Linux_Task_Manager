@@ -11,7 +11,7 @@ It will show following:
 
 #Installation commands
 1. Download 'jklwatch' file
-2. Run following Codes in Terminal:
+2. Run following Command in Terminal:
 ```
 sudo chmod 760 jklwatch 
 sudo mv jklwatch /usr/local/bin
